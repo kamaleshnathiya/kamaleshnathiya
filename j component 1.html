@@ -1,0 +1,685 @@
+<html>
+<head>
+
+<title>
+ONLINE GROCERY SHOP
+</title>
+<style> body{
+margin:0;
+font-family:system-ui;
+
+}
+.parallax, .parallax1{
+background-image: url(background123.jpg); height:max-content;
+background-attachment:fixed; background-position:center; background-size:cover;
+}
+.page-title{ background:rgba(0,0,0.5); text-align:center; color:white; padding:50px;
+font-variant:small-caps; font-size:100px;
+font-family:fantasty; letter-spacing:20px;
+}
+
+
+.sticky{
+position:fixed; top:0; width:100%;
+}
+
+
+.menu{
+background:#184d47; text-align:center;
+}
+
+
+.menu-ul{ margin:0; padding:0; display:inline;
+}
+.menu-ul li{
+font-size:17px; list-style:none;
+display:inline-block; padding:25px 25px 26px 25px;
+}
+
+
+.a-menu, .a-links{
+
+text-decoration:none; color:white;
+}
+
+
+.menu-ul li:hover{ background:#5b8c5a; transform:scale(l.l);
+}
+
+
+.search-box{
+border:1px solid white; border-radius:50px; background:white; width:max-content; display:inline-block; margin:8px;
+}
+.search-box:hover{
+box-shadow:0 0 10px 2px #568c5a; border:1px solid #5b8c5a;
+}
+
+
+.search-input{ width:250px; border:none;
+
+font-size:20px; outline:none; background:transparent; margin 10px 0 0 10px;
+}
+
+
+i{
+font-size:20px; margin:0 10px 0 0;
+}
+
+
+button{
+background:transparent; border:none; outline:none;
+}
+.container, .deals-container{ margin: 50px 50px 50px 5%; width:100%
+text-align:center;
+
+}
+
+
+.categories, .items{ width:max-content; margin:25px;
+
+border:1px solid #184d47; border-radius: 0 0 50px 50px; display:inline-block;
+}
+
+
+.categories:hover, .items:hover{ box-shadow:0 0 10px 3px #184d47;
+}
+
+
+.item-image{ 
+height:200px;
+width:200px;
+border-radius:0 0 50px 50px; 
+padding:10px;
+}
+
+
+
+.image-title{
+text-align:center; 
+padding:10px; 
+font-weight:bold;
+}
+
+
+a,{
+text-decoration:none;
+
+}
+
+
+.title{ padidng:50px; 
+font-size:50px; 
+font-weight:bold;
+letter-spacing:10px;
+ color:white;
+background :rgba(0,0,0,0.5);
+}
+
+
+.deal{ padding:50px; 
+font-size:20px; 
+font-weight:bold; 
+color:white;
+display:inline-block; 
+margin:20px;
+max-width:20%;
+background:linear-gradient(120deg,#16817a 20%,#cee397 50%,#16817a 80%);
+}
+
+
+.coupon-btn{ border:1px solid white;
+
+color:white; margin:10px; padding:10px; border-radius:20px;
+}
+
+
+.coupon-btn:hover{
+box-shadow:0 0 10px 5px white inset;
+}
+
+
+
+.images{ display:inline-block;
+}
+
+
+.item-image-size{ height:175px; width:275px; padding:4.7px;
+}
+
+
+.description{
+
+
+margin:20px;
+min-height:100px;
+
+}
+
+
+.item-select{ margin:10px 0 0 0;
+}
+
+
+.buynow-btn{
+
+
+border:1px solid #green; background:green; padding:5px 15px; border-radius:20px;
+font-weight:bold; margin-top:10px; colour:white;
+}
+
+
+.buynow-btn:hover{
+
+
+border:1px solid #green;
+box-shadow:0 0 10px 5px #greeen inset;
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+<div class="parallax">
+<div class="page-title"> GROCERY SHOP</div>
+</div>
+<div class ="menu" id="sticky">
+<ul class="menu-ul">
+<a href="#" class="a-menu"><li> HOME </li></a>
+<a href="#deals" class="a-menu"><li> DEALS </li></a>
+<a href="#vegetables" class="a-menu"><li> VEGETABLES </li></a>
+<a href="#fruits" class="a-menu"><li> FRUITS </li></a>
+<a href="#meat" class="a-menu"><li> MEAT AND FAST FODS </li></a>
+<a href="contactus1.html" class="a-menu"><li>CONTACT US</li></a>
+<a href="feebackform.php" class="a-menu"><li> FEEDBACK</li></a>
+</ul>
+
+
+<div class="search-box">
+<form><input type="text" placeholder="search	" name="search"
+class="search-input"/>
+<button type="submit"><i class="fa fa-search"></i></button>
+</form>
+</div>
+</div>
+
+
+<div class="container">
+<a href="#vegetables">
+<div class="categories">
+<img src="potato.jpg" class="item-image"/>
+<div class="image-title">vegetables</div>
+</div>
+</a>
+
+
+<a href="#fruits">
+<div class="categories">
+<img src="strawberry.jpg" class="item-image"/>
+<div class="image-title">fruits</div>
+</div>
+</a>
+
+
+<a href="#meat">
+<div class="categories">
+<img src="mutton.jpg" class="item-image"/>
+<div class="image-title">meat& safe food</div>
+</div>
+</a>
+
+
+<a href="#deals">
+<div class="categories">
+
+<img src="deals.jpg" class="item-image"/>
+<div class="image-title">deals</div>
+</div>
+</a>
+</div>
+<div class="deals-container" id="deals">
+<div class="parallax">
+<div class="title"> DEALS</div>
+</div>
+<div class="deal">
+save 30% on the min-purshase of Rs.500 on vegetables<br/>
+<button class="coupon-btn"> Add coupon</button>
+</div>
+
+
+<div class="deal">
+save 50% on the min-purshase of Rs.700 on fruits<br/>
+<button class="coupon-btn"> Add coupon</button>
+</div>
+
+
+<div class="deal">
+save 40% for buying 1 kg of carrot <br/>
+<button class="coupon-btn"> Add coupon</button>
+</div>
+
+
+<div class="deal">
+
+save 20% for all types of fast food<br/>
+<button class="coupon-btn"> Add coupon</button>
+</div>
+
+
+<div class="deal">
+save 70% buying 5 kg of apples<br/>
+<button class="coupon-btn"> Add coupon</button>
+</div>
+
+
+<div class="deal">
+save 10% on the min-purshase of Rs.250 on meat&safefood<br/>
+<button class="coupon-btn"> Add coupon</button>
+</div>
+
+
+
+<div class="deals-container" id="vegetables">
+<div class="parallax">
+<div class="title">VEGETABLES</div>
+</div>
+
+
+<div class ="items ">
+<div class="images">
+<img src="greenpepper.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+
+<b> ORGANIC GREENPEPPER</b><br/>
+<div class="item-select"> price: Rs.50/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>50 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="buy1.html" color="black">BUY NOW </a></button>
+</div>
+</div>
+
+
+<div class ="items ">
+<div class="images">
+<img src="tomato.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b> ORGANIC TOMATOES</b><br/>
+<div class="item-select"> price: Rs.60/250grams
+</div>
+
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>50 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="buy1.html" color="black">BUY NOW </a></button>
+</div>
+</div>
+
+
+
+<div class= "items ">
+<div class="images">
+<img src="potato.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b> ORGANIC POTATOES</b><br/>
+<div class="item-select"> price: Rs.40/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+
+<option>50 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="buy1.html" color="black">BUY NOW </a></button>
+</div>
+</div>
+
+
+<div class ="items ">
+<div class="images">
+<img src="carrot.jpeg" class="item-image-size"/>
+</div>
+<div class="description">
+<b> ORGANIC CARROT</b><br/>
+<div class="item-select"> price: Rs.60/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>50 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+
+<button class="buynow-btn"> <a href="buy1.html" color="black">BUY NOW </a></button>
+</div>
+</div>
+
+
+<div class= "items ">
+<div class="images">
+<img src="onion.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b> ORGANIC ONION</b><br/>
+<div class="item-select"> price: Rs.70/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>50 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="buy1.html" color="black">BUY NOW </a></button>
+</div>
+</div>
+
+
+<div class= "items ">
+<div class="images">
+<img src="cauliflower.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b> ORGANIC CAULIFLOWER</b><br/>
+<div class="item-select"> price: Rs.80/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>50 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="buy1.html" color="black">BUY NOW </a></button>
+</div>
+</div>
+</div>
+
+
+
+<div class="deals-container" id="fruits">
+
+<div class="parallax">
+<div class="title">FRUITS</div>
+</div>
+
+
+<div class ="items ">
+<div class="images">
+<img src="apple.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b> ORGANIC APPLES</b><br/>
+<div class="item-select"> price: Rs.70/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>500 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/><button class="buynow-btn"> <a href="buy1.html" color="black">BUY NOW </a></button>
+</div>
+</div>
+
+
+<div class ="items ">
+
+<div class="images">
+<img src="orange.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b> ORGANIC ORANGES</b><br/>
+<div class="item-select"> price: Rs.60/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>500 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="buy1.html" color="black">BUY NOW </a></button>
+</div>
+</div>
+
+
+
+<div class= "items ">
+<div class="images">
+<img src="banana.jpg" class="item-image-size"/>
+</div>
+
+<div class="description">
+<b> ORGANIC BANANA</b><br/>
+<div class="item-select"> price: Rs.40/1 DOZEN
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>500 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="buy1.html" color="black">BUY NOW </a></button>
+</div>
+</div>
+
+
+<div class ="items ">
+<div class="images">
+<img src="grapes.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b> ORGANIC GRAPES</b><br/>
+<div class="item-select"> price: Rs.60/250grams
+
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>500 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="buy1.html" color="black">BUY NOW </a></button>
+</div>
+</div>
+
+
+<div class= "items ">
+<div class="images">
+<img src="strawberry.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b> ORGANIC STRAWBERRY</b><br/>
+<div class="item-select"> price: Rs.100/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+
+<option>500 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="buy1.html" color="black">BUY NOW </a></button>
+</div>
+</div>
+
+
+<div class= "items ">
+<div class="images">
+<img src="mango.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b> ORGANIC MANGO</b><br/>
+<div class="item-select"> price: Rs.70/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>500 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+
+<button class="buynow-btn"> <a href="buy1.html" color="black">BUY NOW </a></button>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="deals-container" id="meat">
+<div class="parallax">
+<div class="title">MEATS & FAST FOODS</div>
+</div>
+
+
+<div class ="items ">
+<div class="images">
+<img src="mutton.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b> MUTTON</b><br/>
+<div class="item-select"> price: Rs.120/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+
+<option>500 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="buy1.html" color="black">BUY NOW </a></button>
+</div>
+</div>
+
+
+<div class ="items ">
+<div class="images">
+<img src="chicken.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b>chicken</b><br/>
+<div class="item-select"> price: Rs.90/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>500 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+
+<button class="buynow-btn"> <a href="buy1.html" color="black">BUY NOW </a></button>
+</div>
+</div>
+
+
+
+<div class= "items ">
+<div class="images">
+<img src="fish.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b> fish </b><br/>
+<div class="item-select"> price: Rs.250/500grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>500 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="buy1.html" color="black">BUY NOW </a></button>
+</div>
+
+</div>
+
+
+<div class ="items ">
+<div class="images">
+<img src="maggie.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b> maggie</b><br/>
+<div class="item-select"> price: Rs.60/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>1 packet</option>
+<option>2 packet</option>
+<option>4 jumbo packet</option>
+<option>6 jumbo packet</option>
+</select><br/>
+<button class="buynow-btn"> <a href="buy1.html" color="black">BUY NOW </a></button>
+</div>
+</div>
+
+
+<div class= "items ">
+<div class="images">
+
+<img src="yipee noodles.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b> YIPPEE NOODLES</b><br/>
+<div class="item-select"> price: Rs.100/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>1 packet</option>
+<option>2 packet</option>
+<option>4 jumbo packet</option>
+<option>6 jumbo packet</option>
+</select><br/><button class="buynow-btn"> <a href="buy1.html" color="black">BUY NOW </a></button>
+</div>
+</div>
+
+
+<div class= "items ">
+<div class="images">
+<img src="noodles.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b> NOODELS</b><br/>
+<div class="item-select">
+
+price: Rs.70/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>1 packet</option>
+<option>2 packet</option>
+<option>4 jumbo packet</option>
+<option>6 jumbo packet</option>
+</select><br/>
+<button class="buynow-btn"> <a href="buy1.html" color="black">BUY NOW </a></button>
+</div>
+</div>
+</div>
+</body>
+</html>

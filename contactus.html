@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>
+ONLINE GROCERY SHOP
+</title>
+<style>
+* {
+font-family: 'Roboto', sans-serif; 
+font-weight: 400;
+}
+*:focus {
+outline: 0;
+}
+body {
+background-image:url(1.jpg);
+}
+h3 {
+text-align: center;
+color:white;
+}
+
+.container {
+padding: 12px 24px 24px 24px; 
+margin: 100px 150px; 
+background: white;
+border-radius: 1px;
+
+}
+
+
+label {
+font-size: 0.85em; margin-left: 12px;
+ color:black;
+}
+input[type=text],input[type=email], textarea {
+width: 100%; 
+padding: 12px;
+border: 1px solid #ccc;
+
+border-radius: 1px;
+box-sizing: border-box; 
+margin-top: 6px; 
+margin-bottom: 16px; 
+resize: vertical;
+}
+input[type=text]:focus,input[type=email]:focus, textarea:focus {
+border: 1px solid green;
+}
+input[type=submit] {
+background: #64B5F6; 
+margin: 0 auto;
+outline: 0; 
+color: white; 
+border: 0;
+padding: 12px 24px; 
+border-radius: 4px;
+transition: all ease-in-out 0.1s; 
+position: relative;
+display: inline-block; 
+text-align: center;
+}
+input[type=submit]:focus { 
+background: #A5D6A7; 
+color: whitesmoke;
+}
+input[type=submit]:hover { 
+background: #2196F3;
+}
+
+.center {
+text-align: center;
+
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="container">
+<h2 Align ="center" color="white"> FEEDBACK FORM</h2>
+<form action="j component 1.html" name="contact_form">
+<label for="first_name">First Name</label>
+<input name="first_name" type="text" required placeholder="firstname"/>
+<br>
+<label for="last_name">Last Name</label>
+<input name="last_name" type="text" required placeholder="lastname"/>
+<br>
+<label for="email">Email</label>
+<input name="email" type="email" required placeholder="123@gmail.com"/>
+<br>
+<label for="message">Message</label><br>
+<textarea name="message" cols="30" rows="10" placeholder="Enter your message here ..." required> </textarea>
+<div class="center">
+<input type="submit" value="Submit" onclick="msg()"/>
+</div>
+</form>
+<h2 Align ="center" color="white"> THANK YOU FOR YOUR FEEDBACK</h2>
+<a href="j component 1.html">Back</a></div>
+
+<script type="text/javascript"> 
+function msg(){
+confirm("Submit the Feedback?");
+}
+</script>
+
+
+</body>
+</html>
